@@ -152,7 +152,7 @@ namespace Unity.Rendering
                         var rootLodRequirements = chunk.GetNativeArray(RootLodRequirements);
                         var instanceLodRequirements = chunk.GetNativeArray(InstanceLodRequirements);
 
-                        float graceDistance = float.MaxValue;
+                        float graceDistance = 0.0f;
 
                         for (int i = 0; i < chunkInstanceCount; i++)
                         {
